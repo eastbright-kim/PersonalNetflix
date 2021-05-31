@@ -12,7 +12,7 @@
         <!--홈-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="HomeViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -88,7 +88,7 @@
                                                     <constraint firstAttribute="height" constant="200" id="oDe-58-6V0"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="Vo1-CS-jGN" kind="embed" id="yWw-62-LKX"/>
+                                                    <segue destination="Vo1-CS-jGN" kind="embed" identifier="award" id="yWw-62-LKX"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="p5Q-Py-59g">
@@ -97,7 +97,7 @@
                                                     <constraint firstAttribute="height" constant="200" id="w6Z-0f-pax"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="43v-xq-aPh" kind="embed" id="ONg-aC-s8R"/>
+                                                    <segue destination="43v-xq-aPh" kind="embed" identifier="hot" id="ONg-aC-s8R"/>
                                                 </connections>
                                             </containerView>
                                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Le1-yF-e35">
@@ -106,7 +106,7 @@
                                                     <constraint firstAttribute="height" constant="200" id="JP8-jf-zTz"/>
                                                 </constraints>
                                                 <connections>
-                                                    <segue destination="RRS-Nt-7zY" kind="embed" id="Gq7-SY-R1f"/>
+                                                    <segue destination="RRS-Nt-7zY" kind="embed" identifier="my" id="Gq7-SY-R1f"/>
                                                 </connections>
                                             </containerView>
                                         </subviews>

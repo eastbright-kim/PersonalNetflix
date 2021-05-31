@@ -67,6 +67,7 @@ class RecommendListViewModel {
         }
     }
     
+    
     private (set) var recommendType: RecommendKind = .my
     private var movies = [DummyMovie]()
     
