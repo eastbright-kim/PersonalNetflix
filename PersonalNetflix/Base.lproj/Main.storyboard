@@ -143,7 +143,7 @@
         <!--검색-->
         <scene sceneID="mIQ-F3-0aC">
             <objects>
-                <viewController id="4aB-Of-1LN" sceneMemberID="viewController">
+                <viewController id="4aB-Of-1LN" customClass="SearchViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7Ad-aY-H2H">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -151,6 +151,9 @@
                             <searchBar contentMode="redraw" translatesAutoresizingMaskIntoConstraints="NO" id="HU3-Ue-hWn">
                                 <rect key="frame" x="0.0" y="44" width="414" height="51"/>
                                 <textInputTraits key="textInputTraits"/>
+                                <connections>
+                                    <outlet property="delegate" destination="4aB-Of-1LN" id="mzf-3U-4h4"/>
+                                </connections>
                             </searchBar>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="XSu-D2-jvD">
                                 <rect key="frame" x="0.0" y="95" width="414" height="718"/>
@@ -162,7 +165,7 @@
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="tw1-Ua-Ojb">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="MovieCell" id="tw1-Ua-Ojb" customClass="MovieCell" customModule="PersonalNetflix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="bqo-2B-wXZ">
@@ -180,8 +183,15 @@
                                                 <constraint firstItem="Qhu-uF-XLD" firstAttribute="top" secondItem="bqo-2B-wXZ" secondAttribute="top" id="kgg-cM-vFX"/>
                                             </constraints>
                                         </collectionViewCellContentView>
+                                        <connections>
+                                            <outlet property="posterImageView" destination="Qhu-uF-XLD" id="ATp-Co-adL"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="4aB-Of-1LN" id="hab-ok-pO5"/>
+                                    <outlet property="delegate" destination="4aB-Of-1LN" id="quc-1l-sNT"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="GBE-5b-JnU"/>
@@ -197,10 +207,14 @@
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="검색" image="magnifyingglass" catalog="system" id="HSv-8p-zY8"/>
+                    <connections>
+                        <outlet property="movieCollectionView" destination="XSu-D2-jvD" id="HUg-YD-ci3"/>
+                        <outlet property="searchBar" destination="HU3-Ue-hWn" id="mP1-t4-JqJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IH0-T7-xfF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1090" y="1077"/>
+            <point key="canvasLocation" x="1089.8550724637682" y="1076.7857142857142"/>
         </scene>
         <!--공개예정-->
         <scene sceneID="iT3-wC-De5">
