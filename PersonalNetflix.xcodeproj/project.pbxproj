@@ -3,11 +3,13 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		97F2776BACE3135464D1FEB6 /* Pods_PersonalNetflix.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDB5FA09BCF9073CE366FADD /* Pods_PersonalNetflix.framework */; };
+		DB2ACEF52667562B00B416CE /* PlayerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2ACEF42667562B00B416CE /* PlayerView.swift */; };
+		DB2ACEF72667565C00B416CE /* PlayerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2ACEF62667565C00B416CE /* PlayerViewController.swift */; };
 		DB2C86232661B2040072465A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C86222661B2040072465A /* AppDelegate.swift */; };
 		DB2C86252661B2040072465A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C86242661B2040072465A /* SceneDelegate.swift */; };
 		DB2C86272661B2040072465A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2C86262661B2040072465A /* HomeViewController.swift */; };
@@ -16,12 +18,15 @@
 		DB2C862F2661B2040072465A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C862D2661B2040072465A /* LaunchScreen.storyboard */; };
 		DB7E7636266305F1000E4ABE /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */; };
 		DB8BA9F72664E29000E7455B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BA9F62664E29000E7455B /* SearchViewController.swift */; };
+		DBB71D3226672D3900C86DA8 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB71D3126672D3900C86DA8 /* Player.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		72A5B6FAD1B7B6ABD3E9BCFB /* Pods-PersonalNetflix.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalNetflix.debug.xcconfig"; path = "Target Support Files/Pods-PersonalNetflix/Pods-PersonalNetflix.debug.xcconfig"; sourceTree = "<group>"; };
 		84936FC347BE659CE6C96EA9 /* Pods-PersonalNetflix.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PersonalNetflix.release.xcconfig"; path = "Target Support Files/Pods-PersonalNetflix/Pods-PersonalNetflix.release.xcconfig"; sourceTree = "<group>"; };
 		BDB5FA09BCF9073CE366FADD /* Pods_PersonalNetflix.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PersonalNetflix.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB2ACEF42667562B00B416CE /* PlayerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerView.swift; sourceTree = "<group>"; };
+		DB2ACEF62667565C00B416CE /* PlayerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerViewController.swift; sourceTree = "<group>"; };
 		DB2C861F2661B2040072465A /* PersonalNetflix.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PersonalNetflix.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB2C86222661B2040072465A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DB2C86242661B2040072465A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +37,7 @@
 		DB2C86302661B2040072465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
 		DB8BA9F62664E29000E7455B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
+		DBB71D3126672D3900C86DA8 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,7 +58,6 @@
 				72A5B6FAD1B7B6ABD3E9BCFB /* Pods-PersonalNetflix.debug.xcconfig */,
 				84936FC347BE659CE6C96EA9 /* Pods-PersonalNetflix.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -89,6 +94,9 @@
 				DB2C86242661B2040072465A /* SceneDelegate.swift */,
 				DB2C86262661B2040072465A /* HomeViewController.swift */,
 				DB8BA9F62664E29000E7455B /* SearchViewController.swift */,
+				DB2ACEF62667565C00B416CE /* PlayerViewController.swift */,
+				DB2ACEF42667562B00B416CE /* PlayerView.swift */,
+				DBB71D3126672D3900C86DA8 /* Player.storyboard */,
 				DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */,
 				DB2C86282661B2040072465A /* Main.storyboard */,
 				DB2C862B2661B2040072465A /* Assets.xcassets */,
@@ -158,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DB2C862F2661B2040072465A /* LaunchScreen.storyboard in Resources */,
+				DBB71D3226672D3900C86DA8 /* Player.storyboard in Resources */,
 				DB2C862C2661B2040072465A /* Assets.xcassets in Resources */,
 				DB2C862A2661B2040072465A /* Main.storyboard in Resources */,
 			);
@@ -215,6 +224,8 @@
 				DB8BA9F72664E29000E7455B /* SearchViewController.swift in Sources */,
 				DB2C86272661B2040072465A /* HomeViewController.swift in Sources */,
 				DB2C86232661B2040072465A /* AppDelegate.swift in Sources */,
+				DB2ACEF72667565C00B416CE /* PlayerViewController.swift in Sources */,
+				DB2ACEF52667562B00B416CE /* PlayerView.swift in Sources */,
 				DB2C86252661B2040072465A /* SceneDelegate.swift in Sources */,
 				DB7E7636266305F1000E4ABE /* RecommendListViewController.swift in Sources */,
 			);

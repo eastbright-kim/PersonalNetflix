@@ -7,6 +7,7 @@
 
 import UIKit
 import Kingfisher
+import AVFoundation
 
 class SearchViewController: UIViewController {
     
@@ -40,6 +41,22 @@ extension SearchViewController: UICollectionViewDataSource {
 
 extension SearchViewController: UICollectionViewDelegate {
     //클릭하면 뷰컨트롤러 띄움
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        //넘김
+        let movie = self.movies[indexPath.item]
+        let previewURL = URL(string: movie.previewURL)!
+        let item = AVPlayerItem(url: previewURL)
+        
+        let sb = UIStoryboard(name: "Player", bundle: nil)
+        let vc = sb.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
+        vc.modalPresentationStyle = .fullScreen
+        
+        vc.player.replaceCurrentItem(with: item)
+        
+        
+        present(vc, animated: true, completion: nil)
+    }
+    
 }
 
 extension SearchViewController: UICollectionViewDelegateFlowLayout {
@@ -133,34 +150,6 @@ class SearchAPI {
     }
 }
 
-//struct Movie: Codable {
-//    let title: String
-//    let director: String
-//    let previewURL: String
-//    let movieThumbNail: String
-//
-//    enum Codingkeys: String, CodingKey {
-//        case title = "trackName"
-//        case director = "artistName"
-//        case previewURL = "previewUrl"
-//        case movieThumbNail = "artworkUrl100"
-//    }
-//}
-
-//struct Movie: Codable {
-//    let title: String
-//    let director: String
-//    let thumbnailPath: String
-//    let previewURL: String
-//
-//    enum CodingKeys: String, CodingKey {
-//        case title = "trackName"
-//        case director = "artistName"
-//        case thumbnailPath = "artworkUrl100"
-//        case previewURL = "previewUrl"
-//    }
-//}
-
 struct Response: Codable {
     let resultCount: Int
     let movies: [Movie]
@@ -185,16 +174,4 @@ struct Movie: Codable {
 
     }
 }
-//struct Movie: Codable {
-//    let title: String
-//    let director: String
-//    let previewURL: String
-//    let movieThumbNail: String
-//
-//    enum Codingkeys: String, CodingKey {
-//        case title = "trackName"
-//        case director = "artistName"
-//        case previewURL = "previewUrl"
-//        case movieThumbNail = "artworkUrl100"
-//    }
-//}
+
