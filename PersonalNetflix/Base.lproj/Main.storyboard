@@ -219,7 +219,7 @@
         <!--공개예정-->
         <scene sceneID="iT3-wC-De5">
             <objects>
-                <viewController id="7lX-2m-JtW" sceneMemberID="viewController">
+                <viewController id="7lX-2m-JtW" customClass="UpcommingViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lcj-Vi-zve">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="1500"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -246,13 +246,13 @@
                                                             <constraint firstAttribute="height" constant="200" id="t9g-LC-Ej2"/>
                                                         </constraints>
                                                         <connections>
-                                                            <segue destination="HlD-dn-blf" kind="embed" id="fVb-4V-dPB"/>
+                                                            <segue destination="HlD-dn-blf" kind="embed" identifier="award" id="fVb-4V-dPB"/>
                                                         </connections>
                                                     </containerView>
                                                     <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="y2I-ho-tqU">
                                                         <rect key="frame" x="0.0" y="200" width="382" height="200"/>
                                                         <connections>
-                                                            <segue destination="GSE-ph-pFT" kind="embed" id="9re-yO-rzI"/>
+                                                            <segue destination="GSE-ph-pFT" kind="embed" identifier="hot" id="9re-yO-rzI"/>
                                                         </connections>
                                                     </containerView>
                                                 </subviews>
@@ -373,7 +373,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="mgn-W5-yys"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HHZ-BW-dnp">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="HHZ-BW-dnp">
                                     <size key="itemSize" width="120" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -445,7 +445,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="tmR-db-IHV"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQT-vB-MiT">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="CQT-vB-MiT">
                                     <size key="itemSize" width="120" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -520,7 +520,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="MdH-0q-1zl"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FmP-hK-FL4">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="FmP-hK-FL4">
                                     <size key="itemSize" width="120" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
@@ -572,10 +572,10 @@
             </objects>
             <point key="canvasLocation" x="133" y="1246"/>
         </scene>
-        <!--View Controller-->
+        <!--Recommend List View Controller-->
         <scene sceneID="ijs-cf-CCg">
             <objects>
-                <viewController id="HlD-dn-blf" sceneMemberID="viewController">
+                <viewController id="HlD-dn-blf" customClass="RecommendListViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qf6-99-mVP">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -592,14 +592,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="vDU-ua-cxl"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C32-nI-AYJ">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="C32-nI-AYJ">
                                     <size key="itemSize" width="120" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="E2u-Pq-Hnx">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReusableCell" id="E2u-Pq-Hnx" customClass="RecommendCell" customModule="PersonalNetflix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="sEH-vS-ELI">
@@ -618,8 +618,15 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="120" height="160"/>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="yeX-BG-GqY" id="fpJ-O6-Roh"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="HlD-dn-blf" id="3gK-jR-IcH"/>
+                                    <outlet property="delegate" destination="HlD-dn-blf" id="ptF-4R-rfr"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="n0E-s5-pgs"/>
@@ -637,10 +644,10 @@
             </objects>
             <point key="canvasLocation" x="3083" y="1119"/>
         </scene>
-        <!--View Controller-->
+        <!--Recommend List View Controller-->
         <scene sceneID="ryW-6l-sUk">
             <objects>
-                <viewController id="GSE-ph-pFT" sceneMemberID="viewController">
+                <viewController id="GSE-ph-pFT" customClass="RecommendListViewController" customModule="PersonalNetflix" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Vle-my-NDQ">
                         <rect key="frame" x="0.0" y="0.0" width="382" height="200"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -657,14 +664,14 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="160" id="Yc6-TL-N2F"/>
                                 </constraints>
-                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rAj-98-yOZ">
+                                <collectionViewFlowLayout key="collectionViewLayout" scrollDirection="horizontal" minimumLineSpacing="10" minimumInteritemSpacing="10" id="rAj-98-yOZ">
                                     <size key="itemSize" width="120" height="160"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                     <size key="footerReferenceSize" width="0.0" height="0.0"/>
                                     <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 </collectionViewFlowLayout>
                                 <cells>
-                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="Cm6-RT-H9k">
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ReusableCell" id="Cm6-RT-H9k" customClass="RecommendCell" customModule="PersonalNetflix" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="120" height="160"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="vte-xg-YYo">
@@ -683,8 +690,15 @@
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="120" height="160"/>
+                                        <connections>
+                                            <outlet property="movieImageView" destination="tv7-B9-j4c" id="lpN-3y-V9G"/>
+                                        </connections>
                                     </collectionViewCell>
                                 </cells>
+                                <connections>
+                                    <outlet property="dataSource" destination="GSE-ph-pFT" id="6tK-eI-zYR"/>
+                                    <outlet property="delegate" destination="GSE-ph-pFT" id="cwy-Zt-eQN"/>
+                                </connections>
                             </collectionView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="qVb-uy-Bb7"/>
