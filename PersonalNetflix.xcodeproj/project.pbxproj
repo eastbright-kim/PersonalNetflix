@@ -16,6 +16,7 @@
 		DB2C862A2661B2040072465A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C86282661B2040072465A /* Main.storyboard */; };
 		DB2C862C2661B2040072465A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB2C862B2661B2040072465A /* Assets.xcassets */; };
 		DB2C862F2661B2040072465A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DB2C862D2661B2040072465A /* LaunchScreen.storyboard */; };
+		DB2D7FA82669EAC900EC7BB9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DB2D7FA72669EAC900EC7BB9 /* GoogleService-Info.plist */; };
 		DB7A243A2668A3BE006F8764 /* UpcommingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7A24392668A3BE006F8764 /* UpcommingViewController.swift */; };
 		DB7E7636266305F1000E4ABE /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */; };
 		DB8BA9F72664E29000E7455B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BA9F62664E29000E7455B /* SearchViewController.swift */; };
@@ -36,6 +37,7 @@
 		DB2C862B2661B2040072465A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DB2C862E2661B2040072465A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DB2C86302661B2040072465A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DB2D7FA72669EAC900EC7BB9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		DB7A24392668A3BE006F8764 /* UpcommingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcommingViewController.swift; sourceTree = "<group>"; };
 		DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
 		DB8BA9F62664E29000E7455B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
@@ -105,6 +107,7 @@
 				DB2C862B2661B2040072465A /* Assets.xcassets */,
 				DB2C862D2661B2040072465A /* LaunchScreen.storyboard */,
 				DB2C86302661B2040072465A /* Info.plist */,
+				DB2D7FA72669EAC900EC7BB9 /* GoogleService-Info.plist */,
 			);
 			path = PersonalNetflix;
 			sourceTree = "<group>";
@@ -170,6 +173,7 @@
 			files = (
 				DB2C862F2661B2040072465A /* LaunchScreen.storyboard in Resources */,
 				DBB71D3226672D3900C86DA8 /* Player.storyboard in Resources */,
+				DB2D7FA82669EAC900EC7BB9 /* GoogleService-Info.plist in Resources */,
 				DB2C862C2661B2040072465A /* Assets.xcassets in Resources */,
 				DB2C862A2661B2040072465A /* Main.storyboard in Resources */,
 			);
