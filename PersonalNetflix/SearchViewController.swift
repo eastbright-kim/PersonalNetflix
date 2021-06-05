@@ -15,6 +15,7 @@ class SearchViewController: UIViewController {
     @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var movieCollectionView: UICollectionView!
     
+    let db = Database.database().reference().child("searchHistory")
     
     var movies: [Movie] = []
     
@@ -83,6 +84,9 @@ extension SearchViewController: UISearchBarDelegate {
             DispatchQueue.main.async {
                 self.movieCollectionView.reloadData()
             }
+            let timestamp = Date().timeIntervalSince1970.rounded()
+            let term = searchTerm
+            self.db.childByAutoId().setValue(["term" : term, "timestamp" : timestamp])
         }
     }
 }
