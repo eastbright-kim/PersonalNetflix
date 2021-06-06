@@ -21,6 +21,7 @@
 		DB7E7636266305F1000E4ABE /* RecommendListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */; };
 		DB8BA9F72664E29000E7455B /* SearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB8BA9F62664E29000E7455B /* SearchViewController.swift */; };
 		DBB71D3226672D3900C86DA8 /* Player.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DBB71D3126672D3900C86DA8 /* Player.storyboard */; };
+		DBDB87A4266C6B1E00A9D9EC /* HistoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDB87A3266C6B1E00A9D9EC /* HistoryViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendListViewController.swift; sourceTree = "<group>"; };
 		DB8BA9F62664E29000E7455B /* SearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchViewController.swift; sourceTree = "<group>"; };
 		DBB71D3126672D3900C86DA8 /* Player.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Player.storyboard; sourceTree = "<group>"; };
+		DBDB87A3266C6B1E00A9D9EC /* HistoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 				DB2C86262661B2040072465A /* HomeViewController.swift */,
 				DB8BA9F62664E29000E7455B /* SearchViewController.swift */,
 				DB2ACEF62667565C00B416CE /* PlayerViewController.swift */,
+				DBDB87A3266C6B1E00A9D9EC /* HistoryViewController.swift */,
 				DB2ACEF42667562B00B416CE /* PlayerView.swift */,
 				DBB71D3126672D3900C86DA8 /* Player.storyboard */,
 				DB7E7635266305F1000E4ABE /* RecommendListViewController.swift */,
@@ -234,6 +237,7 @@
 				DB2ACEF72667565C00B416CE /* PlayerViewController.swift in Sources */,
 				DB2ACEF52667562B00B416CE /* PlayerView.swift in Sources */,
 				DB2C86252661B2040072465A /* SceneDelegate.swift in Sources */,
+				DBDB87A4266C6B1E00A9D9EC /* HistoryViewController.swift in Sources */,
 				DB7A243A2668A3BE006F8764 /* UpcommingViewController.swift in Sources */,
 				DB7E7636266305F1000E4ABE /* RecommendListViewController.swift in Sources */,
 			);
