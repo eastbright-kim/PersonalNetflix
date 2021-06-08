@@ -19,6 +19,24 @@ class HomeViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func playBtnTapped(_ sender: UIButton) {
+        
+        SearchAPI.searchMovie(searchTerm: "interstellar") { movie in
+            
+            guard let previewURL = movie.first?.previewURL else {return}
+            let item = AVPlayerItem(url: URL(string: previewURL)!)
+            let sb = UIStoryboard(name: "Player", bundle: nil)
+            DispatchQueue.main.async {
+                let vc = sb.instantiateViewController(identifier: "PlayerViewController") as! PlayerViewController
+                vc.player.replaceCurrentItem(with: item)
+                vc.modalPresentationStyle = .fullScreen
+                self.present(vc, animated: true, completion: nil)
+            }
+        }
+        
+    }
+    
 
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
